@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect('sql103.infinityfree.com','if0_37938183','Anamzaiba123','if0_37938183_contact_db') or die('connection failed');
+$conn = mysqli_connect('localhost','root','','contact_db') or die('connection failed');
 
 if(isset($_POST['send'])){
 
@@ -38,7 +38,7 @@ if(isset($_POST['send'])){
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
      <!-- custom css file link  -->
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -86,7 +86,7 @@ if (isset($message)) {
 <section class="home" id="home">
 
     <div class="image" data-aos="fade-right">
-        <img src="images/officepic.jpg" alt="">
+        <img src="officepic.jpg" alt="">
     </div>
 
     <div class="content">
@@ -319,7 +319,7 @@ if (isset($message)) {
 
 
 <!-- custom js file link  -->
- <script src="js/script.js"></script>
+ <script src="script.js"></script>
 
  <!-- aos js link  -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>  
